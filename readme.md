@@ -6,6 +6,8 @@ Terraform module to deploy [Terraform Enterprise](https://www.hashicorp.com/prod
 
 ## Requirements
 
+You must pre-create the external DNS zone in your GCP project.
+
 | Name       | Version |
 | ---------- | ------- |
 | terraform  | >= 1.3  |
@@ -119,6 +121,5 @@ Before destroying the infrastructure, follow the steps in [`delete_db_peering.ip
 ## Notes
 
 - This module is intended for demonstration and testing purposes. For production, review security and permissions carefully.
-- You must pre-create the external DNS zone in your GCP project.
 
 <!-- END_TF_DOCS -->
